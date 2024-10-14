@@ -1,0 +1,110 @@
+
+/* Основные стили */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Шрифт для всего документа */
+    background-color: #F5F7FA; /* Светлый фон страницы */
+    color: #333; /* Темный цвет текста */
+    overflow-x: hidden; /* Убираем горизонтальный скролл */
+}
+
+header {
+    background-color: #4B6F72; /* Темно-бирюзовый фон хедера */
+    padding: 10px 0; /* Уменьшенный отступ для шапки */
+    color: #FFFFFF; /* Белый текст в шапке */
+}
+
+.header {
+    display: flex;
+    justify-content: center; /* Центрируем все содержимое в шапке */
+    align-items: center; /* Выровнять элементы по центру */
+}
+
+.logo img {
+    height: 50px; /* Высота логотипа */
+}
+
+.nav {
+    display: flex;
+    justify-content: center; /* Центрируем навигацию */
+    width: 100%;
+}
+
+.nav-container {
+    display: flex;
+    gap: 15px; /* Отступ между кнопками */
+}
+
+.nav-btn {
+    background-color: #FF6F61; /* Ярко-красный цвет для кнопок */
+    color: white;
+    border: none;
+    padding: 10px 20px; /* Увеличенный отступ для кнопок */
+    font-size: 16px; /* Размер шрифта для кнопок */
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+    text-decoration: none; /* Убираем подчеркивание у текста кнопки */
+}
+
+/* Добавляем правила для ссылок внутри кнопок */
+.nav-btn a {
+    color: white; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+}
+
+.nav-btn:hover {
+    background-color: #FF9A00; /* Ярко-желтый цвет при наведении */
+    transform: scale(1.05); /* Увеличение при наведении */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 140px); /* Полная высота экрана минус высота хедера и футера */
+    text-align: center;
+}
+
+.welcome h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #4B6F72; /* Цвет заголовка */
+}
+
+.welcome p {
+    font-size: 20px;
+    color: #6E6658; /* Светло-серый для текста */
+}
+
+footer {
+    background-color: #4B6F72; /* Темно-бирюзовый фон футера */
+    color: white;
+    text-align: center;
+    padding: 20px 0; /* Увеличенный отступ для футера */
+}
+
+footer p {
+    margin: 0;
+}
+
+footer h2 {
+    margin: 20px 0 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Центрируем значки */
+    gap: 20px; /* Увеличенный отступ между значками */
+}
+
+.social-icon {
+    color: #FFFFFF; /* Цвет значков */
+    font-size: 30px; /* Размер значков */
+    transition: color 0.3s; /* Плавный переход цвета */
+}
+
+.social-icon:hover {
+    color: #FF6F61; /* Ярко-красный цвет при наведении */
+}
